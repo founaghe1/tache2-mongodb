@@ -5,7 +5,7 @@ module.exports = router;
 
 
 // create
-router.post('/add', async (req, res) => {
+router.post('/', async (req, res) => {
     const newPost = new Posts(req.body);
     try {
     const post = await newPost.save();
